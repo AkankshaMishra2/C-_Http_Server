@@ -1,0 +1,8 @@
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8082
+User-Agent: curl/7.81.0
+Accept: */*
+Content-Length: 204
+Content-Type: multipart/form-data; boundary=------------------------fe3502f3ea8885ff
+
+------------

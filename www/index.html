@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to Webserv</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f5f5f5;
+		}
+		.container {
+			background-color: white;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+		h1 {
+			color: #333;
+			text-align: center;
+		}
+		.feature {
+			margin: 20px 0;
+			padding: 15px;
+			background-color: #f8f9fa;
+			border-left: 4px solid #007bff;
+		}
+		.upload-form {
+			margin-top: 30px;
+			padding: 20px;
+			background-color: #e9ecef;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>🚀 Welcome to Webserv!</h1>
+		<p>This is a custom HTTP server written in C++98 according to the 42 project specifications.</p>
+		
+		<div class="feature">
+			<h3>✅ Supported Features:</h3>
+			<ul>
+				<li>GET, POST, DELETE methods</li>
+				<li>Static file serving</li>
+				<li>CGI execution (PHP, Python, etc.)</li>
+				<li>File uploads</li>
+				<li>Directory listing</li>
+				<li>Multiple virtual hosts</li>
+				<li>Error pages</li>
+			</ul>
+		</div>
+
+		<div class="feature">
+			<h3>🌐 Test URLs:</h3>
+			<ul>
+				<li><a href="/static/">Static files directory</a></li>
+				<li><a href="/api/">API endpoint</a></li>
+				<li><a href="/upload.html">File upload page</a></li>
+				<li><a href="/test.php">PHP CGI test</a></li>
+			</ul>
+		</div>
+
+		<div class="upload-form">
+			<h3>📁 Quick File Upload:</h3>
+			<form action="/upload" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" required>
+				<button type="submit">Upload File</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
