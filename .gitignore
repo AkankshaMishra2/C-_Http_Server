@@ -1,0 +1,8 @@
+*.o
+obj/
+webserv
+*.log
+.vscode/
+.DS_Store
+*.exe
+.idea/
